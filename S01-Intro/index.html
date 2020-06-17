@@ -16,8 +16,12 @@
 
   <body>
     <div id="app">
+      
       <header>
-        <h1>MEAT=HEAT?<br>🥓🥩🍔🌭🍖🍗🦴🌯</h1>
+        <div class="headerDiv">
+          <img class="headerImg" src="../assets/images/header.png"/>
+        </div>
+        <h1>MEAT=HEAT?<br></h1>
       </header>
       <main>
 
@@ -31,19 +35,19 @@
         <section class="scrolly">
 
           <figure ref="figure">
-            <!-- <img v-if="step ===0" src="../assets/images/01.png"/>
+            <img v-if="step ===0" src="../assets/images/01.png"/>
             <img v-if="step ===1" src="../assets/images/02.png"/>
             <img v-if="step ===2" src="../assets/images/03.png"/>
             <img v-if="step ===3" src="../assets/images/04.png"/>
             <img v-if="step ===4" src="../assets/images/05.png"/>
             <img v-if="step ===5" src="../assets/images/06.png"/>
-            <img v-if="step ===6" src="../assets/images/cattle.png"/> -->
-            <svg :width="width" :height="height">
+            <img v-if="step ===6" src="../assets/images/cattle.png"/> 
+            <!-- <svg :width="width" :height="height">
               <rect class="bg" :width="width * progress" :height="height" />
               
               <text class="step" :y="height / 2" dy="0.35em" :x="width / 2">{{ step }}</text>
-            </svg>
-          </figure>
+            </svg> -->
+          </figure> -->
 
           <article>
             
@@ -159,7 +163,7 @@
             </div>
 
           </article>
-          
+
         </section>
 
         <section class="outro">

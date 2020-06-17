@@ -2,7 +2,9 @@
   --spacing: 2rem;
   --color-white: #fff;
   --color-black: #120c25;
-  --color-accent: #ee00aa;
+  --color-accent: #1C2A40;
+  --color-text-blue: #1C2A40;
+  --color-text-white: #fff;
   --max-width: 768px;
 }
 
@@ -20,7 +22,7 @@
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
-  color: var(--color-black);
+  color: var(--color-text-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,12 +37,26 @@ footer {
 
 header {
   line-height: 1.2;
-  text-transform: uppercase;
   font-style: italic;
+
+ 
+  position: static;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+
+}
+
+.headerDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: var(--spacing) 0 0 0;
+}
+
+.headerImg {
+  width: 70%;
 }
 
 header h1 {
@@ -99,11 +115,10 @@ article {
   background: var(--color-white);
   padding: var(--spacing);
   width: 100%;
-  max-width: 460px;
   margin: 20vh 0;
 }
 .step.mycustomparagraph {
-  color: green;
+  color: grey;
 
 }
 
@@ -124,7 +139,7 @@ article {
 }
 
 figure {
-  background-color: var(--color-black);
+  background-color: var(--color-white);
   position: -webkit-sticky;
   position: sticky;
   width: 100vw;
@@ -141,10 +156,7 @@ figure {
   align-items: center;
 }
 
-img {
-  position: absolute;
 
-}
 figure svg {
   /* position: absolute; */
   top: 0;
@@ -167,11 +179,12 @@ svg text.step {
 
 .erstes{
   height: 30rem;
-  background: url(../assets/images/01.png"/>");
+  background: url(../assets/images/01.png);
   background-position: center center;
   background-size: cover;
   font-weight: 400;
   font-size: 5rem;
+}
 
 .scrollama__debug-offset {
   border-color: var(--color-white) !important;

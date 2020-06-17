@@ -13,7 +13,7 @@ const app = new Vue({
       step: '.scrolly article .step',
       offset: 0.5,
       progress: true,
-      debug: true
+      debug: false
     }).onStepEnter(this.onEnter)
       .onStepProgress(this.onProgress)
       .onStepExit(this.onExit)
