@@ -13,7 +13,7 @@ const app = new Vue({
       step: '.scrolly article .step',
       offset: 0.5,
       progress: true,
-      debug: true
+      debug: false
     }).onStepEnter(this.onEnter)
       .onStepProgress(this.onProgress)
       .onStepExit(this.onExit)
@@ -36,11 +36,11 @@ const app = new Vue({
       }]
     },
     circleColor () {
-      const colors = ['#ee00aa', '#f35580', '#f8aa57', '#fdff2d']
+      const colors = ['#1D2A3E', '#f35580', '#f8aa57', '#fdff2d']
       return colors[this.step]
     },
     lineColor () {
-      const colors = ['#ee00aa', '#fdff2d']
+      const colors = ['#1D2A3E', '#fdff2d']
       const steps = [0, 3]
       const scale = d3.scaleLinear().domain(steps).range(colors)
       return scale(this.step + this.progress)
