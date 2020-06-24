@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Plex Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Plex Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
@@ -29,23 +29,34 @@ body {
   align-items: center;
 }
 
-header,
 main,
 footer {
   width: 100%;
 }
 
-header {
-  line-height: 1.2;
-  font-style: italic;
 
-  position: static;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
+.bg {
+  /* The image used */
+  background-image: url("../assets/images/header.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+.headerImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+
 
 p {
   max-width: 50rem;
@@ -58,7 +69,10 @@ img {
 .text-with-background {
   color: var(--color-text-white);
   background-color: var(--color-accent);
-  padding: 1rem 0;
+  padding: 6rem 0;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 1.7;
 }
 
 .text-centered {
