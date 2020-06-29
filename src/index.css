@@ -16,6 +16,33 @@
   padding: 0;
 }
 
+@media (min-width: 1418px) {
+  .warning {
+    display: none;
+  }
+}
+
+
+.warning{
+  background-color: #ffffff;
+  width:100vw;
+  height:100vh;
+  z-index: 300;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position:fixed;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.warning_p{
+  top: 50%;
+  max-width: inherit;
+}
+
+
 body {
   font-family: "Roboto", "Plex Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
