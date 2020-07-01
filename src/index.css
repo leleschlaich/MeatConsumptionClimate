@@ -45,7 +45,7 @@
 
 body {
   font-family: "Roboto", "Plex Sans", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
@@ -70,14 +70,16 @@ footer {
 }
 
 
-
-p {
+h2{
   max-width: 50rem;
 }
 
-.animals{
-  max-width: 50%;
+p {
+  max-width: 50rem;
+  margin: 40px 0 0 0;
 }
+
+
 
 img {
   max-width: 100%;
@@ -90,7 +92,7 @@ img {
 }
 
 .small-text{
-  font-size: 1em;
+  font-size: 1.4em;
   text-align: left;
   line-height: 1.5;
 }
