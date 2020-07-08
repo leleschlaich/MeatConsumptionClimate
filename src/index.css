@@ -56,9 +56,57 @@ body {
   align-items: center;
 }
 
-main,
+main {
+  width: 100%;
+}
+
 footer {
   width: 100%;
+  background: #F7F7F7;
+  width: 90vw;
+  border-radius: 5px;
+  padding: 3vh 3vw 3vw 3vw;
+  margin: 15vh 5vw 5vw 5vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLeft{
+  display: flex;
+  flex-direction: column;
+}
+
+.p-footer {
+  width: 50vw;
+  margin: 0;
+  font-size: 1em;
+  line-height: 150%;
+}
+
+.text-list {
+  height: auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.boxtext {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-style: italic;
+  color: var(--color-black);
+}
+
+h4{
+  font-size: 1.6rem;
 }
 
 
